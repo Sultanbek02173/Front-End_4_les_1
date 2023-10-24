@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
+body {
+    background-color: black;
+    color: #17D4FE;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+::before,
+::after {
+    position: absolute;
+    content: "";
+}
+
+.proj .number {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.proj .btn-holder {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 10px auto 35px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #17D4FE;
+    border: none;
+    cursor: pointer;
+    margin: 0px 25px 15px;
+    min-width: 130px;
+    border: 1px solid #17D4FE;
+
+}
+
+.btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 2px;
+    transition: 0.3s;
+}
+
+.btn::before {
+    background-color: black;
+    transition: 0.3s ease-out;
+}
+
+.btn span {
+    color: #17D4FE;
+    transition: 0.2s 0.1s;
+}
+
+.btn span:hover {
+    color: rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+}
+
+.btn:hover {
+    border: 1px solid rgb(28, 31, 30);
+
+}
+
+.opacity::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.opacity:hover::before {
+    opacity: 0;
+}
